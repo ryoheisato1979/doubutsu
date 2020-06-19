@@ -1,0 +1,186 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: "Nico Moji";
+}
+
+/* ゲームラップ */
+.game-wrap{
+    background-color: rgb(224, 247, 223);
+    width: 900px;
+    height: 650px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/* ゲームコンテナ */
+.game-container{
+    /* width: 100%;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px; */
+}
+
+/* ゲームスタート画面 */
+.game-start form{
+    height: 600px;
+    text-align: center;
+}
+
+.game-start h2{
+    padding-top: 70px;
+    font-size: 70px;
+    color: rgb(7, 182, 33);
+}
+
+.game-start input[type="submit"], .restart input[type="submit"], .game-over input[type="submit"]{
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(151, 226, 45, 0.7);
+    font-size: 20px;
+    font-family: "Nico Moji";
+    box-shadow    : 6px 6px 5px #b0e0b3;  /* 影の設定 */
+}
+.game-start input[type="submit"]:active , .restart input[type="submit"]:active {
+    box-shadow    : none;        /* カーソル時の影消去 */
+}
+
+
+.game-start img{
+    margin-top: 20px;
+    width: 35%;
+}
+
+/* ゲームオーバー */
+.game-over form{
+    height: 600px;
+    text-align: center;
+}
+
+.game-over h2{
+    padding-top: 70px;
+    font-size: 70px;
+    color: rgb(7, 182, 33);
+}
+
+
+.game-over img{
+    margin-top: 10px;
+    width: 35%;
+}
+
+/* アニマルコンテナ */
+.animal-container{
+    display: flex;
+    /* justify-content: space-between; */
+    /* background-repeat: no-repeat; */
+    /* background-image: url(img/bg_natural_mori.jpg); */
+    /* background-size: cover; */
+    /* background-position: center bottom; */
+    position: relative;
+}
+.animal-container img{
+    margin-top: 50px;
+    height: 300px;
+    width: 800px;
+}
+/* アニマルレフト */
+.animal-left{
+    position: absolute;
+    top: 280px;
+    left: 100px;
+    background: rgba(151, 226, 45, 0.7);
+    padding: 5px;
+}
+.animal-left p{
+    font-size: 40px;
+}
+/* アニマルライト */
+.animal-right{
+    position: absolute;
+    left:500px;
+    top: 50px;
+}
+
+.animal-right img{
+    width: 250px;
+    height: 250px;
+}
+/* プレイヤートップ */
+.player-top{
+    width: 800px;
+    height: 30px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    background-color: rgba(151, 226, 45, 0.7);
+    border-radius: 10px;
+    font-size: 23px;
+}
+
+.hp-low{
+    color: red;
+}
+/* プレイヤーコンテナ */
+.player-container{
+    display: flex;
+    margin-top: 20px;
+}
+/* プレイヤーレフト */
+.player-left{
+    margin-left: 50px;
+    background-color: rgba(151, 226, 45, 0.7);
+    width: 400px;
+    height: 180px;
+    /* メッセージエリアにoverflow: scroll;を指定*/
+    overflow: scroll;
+}
+.player-left p{
+    width:500px;
+    font-size: 20px;
+}
+/* プレイヤーライト */
+.player-right{
+    margin-right: 50px;
+}
+
+.player-action{
+    margin-top: 10px;
+}
+.restart{
+        margin-top: -20px;
+}
+
+.button {
+    display       : inline-block;
+    border-radius : 50%;          /* 角丸       */
+    border: none;
+    font-size     : 15pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 35px 10px;   /* 余白       */
+    background    : rgba(151, 226, 45, 0.7);     /* 背景色     */
+    color         : #000000;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 6px 6px 5px #b0e0b3;  /* 影の設定 */
+    margin-right: 15px;
+}
+.button:active {
+    box-shadow    : none;        /* カーソル時の影消去 */
+}
+
+/* fontawsame */
+.fa-heart{
+    color: rgba(255, 0, 0, 0.7);
+    font-size: 28px;
+    line-height: 25px;
+}
